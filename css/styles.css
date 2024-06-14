@@ -1,0 +1,371 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Primary white background */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary, .btn-secondary {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #ff8c00; /* Dark orange */
+}
+
+.btn-primary:hover {
+    background-color: #e07b00; /* Slightly darker orange */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Slightly darker gray */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.alert {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    background-color: #f44336;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+}
+
+.alert-danger {
+    background-color: #f44336;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 80px; /* Slightly increase logo size */
+    height: 80px; /* Slightly increase logo size */
+    margin-right: 15px; /* Adjust space between logo and title */
+}
+
+.navbar-title {
+    font-size: 2em; /* Slightly increase title size */
+    font-weight: bold;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: relative;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ff8c00; /* Dark orange */
+    width: 200px;
+    height: 100vh; /* Full viewport height */
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #ff8c00; /* Dark orange */
+}
+
+.nav-link.active {
+    color: white;
+    background-color: #e07b00; /* Slightly darker orange */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Admin Theme */
+body.admin {
+    background-color: #ffffff; /* Primary white background */
+    color: black;
+}
+
+.admin .btn-primary {
+    background-color: #800000;
+    border: none;
+}
+
+.admin .btn-primary:hover {
+    background-color: #660000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.admin .form-control {
+    border: 1px solid #800000;
+}
+
+.admin .sidebar {
+    background-color: #800000;
+}
+
+.admin .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.admin .nav-link.active {
+    color: white;
+    background-color: #660000;
+}
+
+.admin .nav-link:hover {
+    background-color: #800000;
+    color: rgb(0, 0, 0);
+}
+
+.admin .container-fluid {
+    background-color: #ffffff;
+}
+
+.admin .table {
+    color: black;
+    background-color: white;
+}
+
+.admin .btn-outline-secondary {
+    color: black;
+    border-color: black;
+}
+
+.admin .btn-outline-secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Candidate Theme */
+body.candidate {
+    background-color: #ffffff; /* Primary white background */
+    color: black;
+}
+
+.candidate .btn-primary {
+    background-color: #00008B;
+    border: none;
+}
+
+.candidate .btn-primary:hover {
+    background-color: #000070;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.candidate .form-control {
+    border: 1px solid #00008B;
+}
+
+.candidate .sidebar {
+    background-color: #00008B;
+}
+
+.candidate .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.candidate .nav-link.active {
+    color: white;
+    background-color: #000070;
+}
+
+.candidate .nav-link:hover {
+    background-color: #00008B;
+    color: rgb(0, 0, 0);
+}
+
+.candidate .container-fluid {
+    background-color: #ffffff;
+}
+
+.candidate .table {
+    color: black;
+    background-color: white;
+}
+
+.candidate .btn-outline-secondary {
+    color: black;
+    border-color: black;
+}
+
+.candidate .btn-outline-secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Student Theme */
+body.student {
+    background-color: #ffffff; /* Primary white background */
+    color: black;
+}
+
+.student .btn-primary {
+    background-color: #FFD700;
+    border: none;
+    color: black;
+}
+
+.student .btn-primary:hover {
+    background-color: #FFB700;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.student .form-control {
+    border: 1px solid #FFD700;
+}
+
+.student .sidebar {
+    background-color: #FFD700;
+}
+
+.student .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.student .nav-link.active {
+    color: white;
+    background-color: #FFB700;
+}
+
+.student .nav-link:hover {
+    background-color: #FFD700;
+    color: rgb(0, 0, 0);
+}
+
+.student .container-fluid {
+    background-color: #ffffff;
+}
+
+.student .table {
+    color: black;
+    background-color: white;
+}
+
+.student .btn-outline-secondary {
+    color: black;
+    border-color: black;
+}
+
+.student .btn-outline-secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Index Page Styles */
+.card.role-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card.role-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #888;
+}
+
+/* Dashboard Card Styles */
+.dashboard-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dashboard-card.green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dashboard-card.yellow {
+    background-color: #FFD700;
+    color: black;
+}
+
+.dashboard-card.purple {
+    background-color: #800080;
+    color: white;
+}

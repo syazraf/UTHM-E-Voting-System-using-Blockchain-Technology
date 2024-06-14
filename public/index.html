@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect to MetaMask</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+  <h1>Connect to MetaMask</h1>
+  <button id="connectButton">Connect to MetaMask</button>
+  <script>
+    let web3;
+
+    document.getElementById('connectButton').addEventListener('click', async () => {
+      if (typeof window.ethereum !== 'undefined') {
+        try {
+          // Request account access if needed
+          await ethereum.request({ method: 'eth_requestAccounts' });
+          web3 = new Web3(ethereum);
+
+          // Get the user's accounts
+          const accounts = await web3.eth.getAccounts();
+          console.log('Connected account:', accounts[0]);
+
+          // Load your smart contract
+          const contractAddress = 'your_smart_contract_address'; // Replace with your smart contract address
+          const contractABI = []; // Replace with your smart contract ABI
+          const contract = new web3.eth.Contract(contractABI, contractAddress);
+
+          // Example interaction with the contract
+          const result = await contract.methods.yourMethod().call({ from: accounts[0] });
+          console.log('Smart contract result:', result);
+
+        } catch (error) {
+          console.error('User denied account access or error occurred:', error);
+        }
+      } else {
+        console.error('MetaMask not detected. Please install MetaMask.');
+      }
+    });
+  </script>
+</body>
+</html>
+

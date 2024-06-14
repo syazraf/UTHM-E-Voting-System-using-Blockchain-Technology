@@ -1,0 +1,9 @@
+{
+    "name": "uthm-vote-system/project",
+    "description": "UTHM Voting System",
+    "require": {
+        "twilio/sdk": "^6.0",
+        "phpmailer/phpmailer": "^6.0"
+    }
+}
+
