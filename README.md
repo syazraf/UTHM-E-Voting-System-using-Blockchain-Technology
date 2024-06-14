@@ -10,6 +10,8 @@ Before you begin, ensure you have met the following requirements:
 - Composer installed on your machine.
 - PHP installed on your machine.
 - MySQL installed and running on your machine.
+- Install MetaMask
+- Install Ganache
 
 ## Installation
 Follow these steps to set up the project on your local machine:
